@@ -1,0 +1,60 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/discover/discover",
+        "pages/personal/personal",
+        "pages/bangdan/bangdan",
+        "pages/luyin/luyin",
+        "pages/search/search",
+        "pages/wodezuopin/wodezuopin"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#d43c33",
+        "navigationBarTitleText": "清唱大师",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#ffffff",
+        "selectedColor": "#f7d680",
+        "backgroundColor": "#d43c33",
+        "list": [
+            {
+                "pagePath": "pages/bangdan/bangdan",
+                "text": "",
+                "iconPath": "/static/images/bangdan0.png",
+                "selectedIconPath": "/static/images/bangdan1.png"
+            },
+            {
+                "pagePath": "pages/discover/discover",
+                "text": "",
+                "iconPath": "/static/images/yueku0.png",
+                "selectedIconPath": "/static/images/yueku1.png"
+            },
+            {
+                "pagePath": "pages/luyin/luyin",
+                "text": "",
+                "iconPath": "/static/images/luyin0.png",
+                "selectedIconPath": "/static/images/luyin1.png"
+            },
+            {
+                "pagePath": "pages/index/index",
+                "text": "",
+                "iconPath": "/static/images/tuijian0.png",
+                "selectedIconPath": "/static/images/tuijian1.png"
+            },
+            {
+                "pagePath": "pages/personal/personal",
+                "text": "",
+                "iconPath": "/static/images/zhuye0.png",
+                "selectedIconPath": "/static/images/zhuye1.png"
+            }
+        ]
+    },
+  
+    "requiredBackgroundModes": [
+        "audio"
+    ],
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

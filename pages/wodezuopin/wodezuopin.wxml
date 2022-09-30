@@ -1,0 +1,70 @@
+<!--pages/wodezuopin/wodezuopin.wxml-->
+<view class="totalContainer">
+<text class="total">总共{{total}}个作品</text>
+</view>
+<view class="luyinScorll">
+<view wx:for="{{musicList}}"  wx:for-index="index" wx:key="_id" class="songDetailContainer"  >
+  <text class="iconfont icon-lajitong delete" bindtap="delete" data-index="{{index}}"  data-id="{{item}}"></text>
+<image class="profilephoto" src="{{musicList[index].userInfoprofilephoto}}" data-index="{{index}}" bindtap="zanweikaifang"></image>
+<view class="zongcontainer">
+<view class="godetail" bindtap="goDetail"  data-id="{{item._id}}"></view>
+<view class="titleContainer">
+<text class="title">{{item.title}}</text>
+</view >
+<view class="contentContainer">
+<text class="content">{{item.content}}</text>
+</view>
+</view>
+<!--歌曲进度条区域-->
+<view class="progressContainer">
+<view class="progressControl">
+<text>{{item.currentTime}}</text>
+<!--总进度条-->
+<view class="barControl"  data-index="{{index}}">
+<!--实时进度条-->
+  <view class="audio-Current-Bar" style="width: {{item.currentWidth + 'rpx'}};">
+    <!--实时进度条头-->
+    <view class="audio-tou"></view>
+  </view>
+</view>
+<text  data-index="{{index}}">{{item.duration}}</text>
+</view>
+</view>
+<!--底部控制播放区域-->
+<view class="musicControl">
+  <text class="iconfont {{item.bofangisPlay?'icon-bofang':'icon-bofang1'}}" bindtap="goDetail" data-index="{{index}}"></text>
+  <!--右侧点赞评论转发区域-->
+<view class= "cover-container">
+<view class="nav-section">
+      <view class="thumbs"   hover-stay-time="50">
+      <view>
+        <text class="iconfont {{item.isthumbs?'icon-xin1':'icon-xin'}} " bindtap="thumbs" data-id="{{item._id}}"  data-index="{{index}}" ></text>
+        <text class="thumbsnum" data-index="{{index}}">{{item.thumbs}}</text>
+      </view>
+      </view>
+      
+      <view class="pinglun"   hover-stay-time="50" >
+      <view>
+        <text class="iconfont icon-pinglun" bindtap="goDetail" data-id="{{item._id}}" data-index="{{index}}"></text>
+        <text class="pinglunnum" data-index="{{index}}">{{item.pinglun.length}}</text>
+      </view>
+      </view>
+      <view class="zhuanfa"    hover-stay-time="50" data-index="{{index}}">
+      <view>
+        <text class="iconfont icon-forward1" bindtap="zhuanfa" data-index="{{index}}" data-id="{{item._id}}" ></text>
+        <text class="zhuanfanum" data-index="{{index}}">{{item.zhuanfanum}}</text>
+      </view>
+      </view>
+
+</view>
+</view>
+</view>
+
+<!-- <text bindtap="kaishibofang1" data-index="{{index}}"  class="{{isBofang}}">{{index}}</text>
+<image class="{{iconxin}}" src="" bindtap="thumbs"></image>
+<image class="iconfont icon-pinglun" src="" bindtap="goDetail" data-id="{{item._id}}"></image>
+<image class="iconfont icon-forward1" src="" bindtap="thumbs"></image>
+<image class="iconfont icon-pengyouquan" src="" bindtap="thumbs"></image> -->
+
+</view>
+</view>

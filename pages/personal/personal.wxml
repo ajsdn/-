@@ -1,0 +1,62 @@
+<!--pages/personal/personal.wxml-->
+<view class="personalContainer" wx:if="{{!isLoginData}}">
+  <view class="user-section">
+    <image class="bg" src="/static/images/bg.jpg"></image>
+    <view class="user-info-box" bindtap="toLogin">
+      <view class="portrait-box">
+        <image class="portrait" src='{{userInfo.avatarUrl?userInfo.avatarUrl:"/static/images/youke.png"}}'></image>
+      </view>
+      <view class="info-box">
+        <text class="username" >{{userInfo.nickName?userInfo.nickName: '登录'}}</text>
+      </view>
+    </view>
+
+    <view class="vip-card-box">
+    
+  
+      <view class="tit">
+        <!-- 会员图标-->
+
+        个人资料卡
+      </view>
+      <text class="e-m">获赞：{{userInfo.thumbsNum}}</text>
+      <text class="e-b">作品：{{userInfo.compositionNum}}</text>
+      <text class="e-b"></text>
+    </view>
+  </view>
+
+
+  <view
+      class="cover-container"
+      bindtouchstart="handleTouchStart"
+      bindtouchmove="handleTouchMove"
+      bindtouchend="handleTouchEnd"
+      style="transform: {{coverTransform}}; transition: {{coverTransition}}"
+  >
+    <image class="arc" src="/static/images/arc.png"></image>
+    <!-- 个人中心导航 -->
+    <view class="nav-section">
+      <view class="nav-item"  hover-class="common-hover"  hover-stay-time="50" bindtap="toZuopin">
+        <text class="iconfont icon-wodeyinle"></text>
+        <text>我的作品</text>
+      </view>
+      <view class="nav-item"   hover-class="common-hover" hover-stay-time="50" bindtap="zanweikaifang">
+        <text class="iconfont icon-wodexihuan"></text>
+        <text>我的喜欢</text>
+      </view>
+      <view class="nav-item"  hover-class="common-hover"  hover-stay-time="50" bindtap="zanweikaifang">
+        <text class="iconfont icon-wodefensi"></text>
+        <text>我的粉丝</text>
+      </view>
+      <view class="nav-item" hover-class="common-hover"  hover-stay-time="50" bindtap="zanweikaifang">
+        <text class="iconfont icon-wode-pifusuipian"></text>
+        <text>个性装扮</text>
+      </view>
+    </view>
+
+    <!-- 个人中心列表 -->
+
+  </view>
+
+</view>
+

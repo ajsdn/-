@@ -1,0 +1,47 @@
+<!--pages/luyin/luyin.wxml-->
+<!--标题 简介-->
+<!--精选推荐区域-->
+<view class="recommendContainer">
+  <view class="header">
+    <text class="iconfont icon-search searchicon" bindtap="toSearch"></text>
+    <contact-button class="fankui"></contact-button>
+    <text class="title1">歌神献曲</text>
+  </view>
+</view>
+<view class="inputContainer">
+<input placeholder="标题" class="inputtitle" bindinput="getTitleContent" confirm-type="send" value="{{Inputtitle}}" maxlength="8"></input>
+<textarea placeholder="写下此刻的想法吧" class="inputcontent" bindinput="getContent" confirm-type="send" auto-height value="{{Inputcontent}}" maxlength="60"></textarea>
+</view>
+<!--须知-->
+<!-- <view class="xuzhi">
+<text class="xuzhititle">温馨提示</text>
+<text class="neirong">1.标题最多只能8个字(包括字母)</text>
+<text class="neirong">2.内容最多60个字(包括字母)</text>
+<text class="neirong">3.暂时最多录音60s</text>
+<text class="neirong">4.高赞专区和排行榜都是实时更新</text>
+<text class="neirong">5.点击加入我的小程序防止迷路</text>
+<text class="neirong">6.分享给朋友让她给你点赞吧</text>
+<text class="neirong">7.更多功能正在不计头发地开发中...</text>
+<text class="neirong">8.您的分享就是最大的鼓励</text>
+</view> -->
+<!-- 录音  触摸开始  结束-->
+<view class="zhengtiContainer">
+  <text class='marright'>{{minute}}:{{second}}</text>
+  <text class="wenxintishi">如不满意  重新录制即可</text>
+  <view class="luyinContainer">
+  <image src="{{isSpeaking?'/static/images/luyinzhong.png':'/static/images/luyin.png'}}" class="luyin" bindtap="luyin"></image>
+  </view>
+  <!--播放录音-->
+  <view class="bofangContainer">
+  <image src="{{isbofang?'/static/images/zanting.png':'/static/images/bofang.png'}}" class="bofang" bindtap="kaishibofang"></image>
+  </view>
+  <!--上传录音-->
+  <view class="shangchuanContainer">
+  <image src="/static/images/shangchuan.png" class="shangchuan" bindtap="uploadMusic"></image>
+  </view>
+</view>
+
+<!-- <image src="/static/images/zanting.png" class="bofang">播放</image> -->
+
+<!--上传录音-->
+

@@ -1,0 +1,41 @@
+/* pages/bangdan/bangdan.wxss */
+/*顶部栏*/
+.recommendContainer{
+    background:#f5f5f5;
+  }
+  .title1{
+    background: #ffffff;
+    display: flex;
+    border: 1rpx black solid;
+  
+    justify-content: center;
+    align-items: center;
+    font-size: 32rpx;
+    color:#666;
+    line-height: 70rpx;
+  }
+  /*搜索图标*/
+.searchicon{
+    position: absolute;
+    top: 20rpx;
+    right: 35rpx;
+    font-size: 40rpx;
+}
+.fankui{
+  position: absolute;
+  top: 25rpx;
+  left: 35rpx;
+}
+
+/*暂未开放*/
+.zanweikaifang{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 220rpx;
+}
+.weikaifang{
+    font-size: 36rpx;
+    opacity: 0.5;
+}

@@ -1,0 +1,129 @@
+/* pages/luyin/luyin.wxss */
+/*标题简介输入框*/
+
+.inputContainer{
+    width: 100%;
+   
+    background: #ffffff;
+}
+.inputtitle{
+    border:1rpx solid rgb(124, 112, 96);
+    position: relative;
+    top: 20rpx;
+    padding-left: 10rpx;
+    height: 60rpx;
+    left: 150rpx;
+    border-radius: 10rpx ;
+    width: 60%;
+    background: #f5f5f5;
+}
+.inputcontent{
+    border:1rpx solid rgb(124, 112, 96);
+    position: relative;
+    top: 40rpx;
+    left: 120rpx;
+    border-radius: 10rpx ;
+    width: 70%;
+    background: #f5f5f5;
+    min-height: 200rpx;
+    box-sizing: border-box;
+    padding-top: 10rpx;
+    padding-left: 10rpx;
+    padding-right: 10rpx;
+
+}
+.recommendContainer{
+    background:#f5f5f5;
+  }
+  .title1{
+    background: #ffffff;
+    display: flex;
+    border: 1rpx black solid;
+  
+    justify-content: center;
+    align-items: center;
+    font-size: 32rpx;
+    color:#666;
+    line-height: 70rpx;
+  }
+  /*搜索图标*/
+  .searchicon{
+    position: absolute;
+    top: 20rpx;
+    right: 35rpx;
+    font-size: 40rpx;
+  }
+  .fankui{
+    position: absolute;
+    top: 25rpx;
+    left: 35rpx;
+    font-size: 40rpx;
+  }
+
+.neirong{
+    top: 40rpx;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+/*录音信息*/
+.zhengtiContainer{
+    position: relative;
+    top: 250rpx;
+    left: 120rpx;
+    border-radius: 10rpx ;
+    border: 1rpx solid #f5f5f5;
+    height: 400rpx;
+    width: 70%;
+    text-align: center;
+    background: #f5f5f5;
+    justify-content: center;
+    display: flex;
+    border:1rpx solid rgb(124, 112, 96);
+}
+
+/*录音播放上传按钮*/
+.luyinContainer{
+    position: absolute;
+    bottom: 0rpx;
+    left: 204rpx;
+ }
+ .marright{
+     position: relative;
+     top: 15rpx;
+     left: 140rpx;
+ }
+ .wenxintishi{
+     opacity: 0.5;
+    position: relative;
+    top: 100rpx;
+    right: 30rpx;
+}
+ 
+ .luyin{
+    width: 120rpx;
+    height:120rpx;
+ }
+ .bofangContainer{
+    position: absolute;
+    bottom: 5rpx;
+    left: 20rpx;
+ }
+ .bofang{
+    width: 80rpx;
+    height:80rpx;
+ }
+ .shangchuanContainer{
+    position: absolute;
+    bottom: 5rpx;
+    right: 20rpx;
+ }
+ .shangchuan{
+    width: 80rpx;
+    height:80rpx;
+ }
+.button:not([size='mini']){
+    height: 70rpx;
+    width: calc(33.3vw);
+}

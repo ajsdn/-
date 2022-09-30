@@ -1,0 +1,230 @@
+/* pages/detail/detail.wxss */
+/*整个滑动样式*/
+page{
+  background-color: #f5f5f5;
+}
+.pinglunScorll{
+  margin-top: -20rpx;
+  background:#f5f5f5;
+  width: 100%;
+  height: calc(100vh - 150rpx );
+}
+/*歌曲详情*/
+.songDetailContainer{
+  width: 95%;
+  height: 480rpx;
+ margin: 40rpx 20rpx ;
+  background:#fff;
+  border-radius: 10rpx;
+}
+
+.profilephoto{
+  position: relative;
+  top:30rpx;
+  left: 30rpx;
+  border: black 1rpx solid;
+  border-radius: 5rpx;
+  width: 90rpx;
+  height: 90rpx;
+}
+.name{
+position: relative;
+left: 50rpx;
+top: -40rpx;
+}
+.zongcontainer{
+position: relative;
+}
+.titleContainer{
+width:350rpx ;
+position: absolute;
+left: 180rpx;
+top: -110rpx;
+}
+.title{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.content{
+position: absolute;
+left: 180rpx;
+display: flex;
+top: -30rpx;
+width: 400rpx;
+font-size: 28rpx;
+}
+/** 点赞 评论 转发 朋友圈 图标样式 **/
+.cover-container{
+  display: flex;
+  position: relative;
+  top: -130rpx;
+  left: 645rpx;
+  width: 65rpx;
+  height: 330rpx;  
+  border-radius: 10rpx;
+}
+.nav-section .nav-item {
+  display: flex;
+  position: relative;
+  width: 25%;
+  height: 30%;
+  margin: 10rpx;
+}
+.nav-section .nav-item .iconfont {
+  font-size: 50rpx;
+  line-height: 70rpx;
+}
+ .thumbsnum{
+    position: relative;
+    right: 50%;
+    top:30rpx;
+    font-size: 26rpx;
+}
+.pinglunContainer{
+  opacity: 0.5;
+  display: flex;
+  background: #f5f5f5;
+  position: relative;
+  top:-30rpx;
+  justify-content: center;
+  text-align: center;
+}
+.pinglunnum{
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  opacity: 0.5;
+}
+.zhuanfaContainer{
+  position: relative;
+  top: 360rpx;
+  right: 60rpx;
+}
+.iconfont.icon-forward1{
+  font-size: 40rpx;
+}
+.zhuanfanum{
+  position: relative;
+  right: 0rpx;
+  top:-3rpx;
+  font-size: 30rpx;
+}
+.musicControl{
+  border-top: 1rpx solid #eee;
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  position: relative;
+  top:280rpx;
+}
+.musicControl text{
+  position: relative;
+  left: 335rpx;
+  top: 10rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 50rpx;
+}
+.progressContainer{
+position: relative;
+top: 190rpx;
+left: 55rpx;
+}
+.progressControl{
+bottom: -90rpx;
+width: 590rpx;
+position: absolute;
+display: flex;
+}
+.barControl{
+position: relative;
+left: -5rpx;
+width: 410rpx;
+height: 4rpx;
+background: rgb(0,0,0,0.4);
+margin: auto;
+}
+.audio-Current-Bar{
+position: absolute;
+top: 0;
+left: 0;
+z-index: 0;
+margin: auto;
+height: 6rpx;
+background: #d43c33;
+}
+.audio-tou{
+position: absolute;
+right: -12rpx;
+top: -4rpx;
+width: 12rpx;
+height: 12rpx;
+border-radius: 50%;
+background:#fff;
+}
+/*block*/
+.Container{
+  width: 95%;
+  margin: 20rpx 20rpx ;
+  background:#fff;
+  border-radius: 10rpx;
+
+}
+/* 头像样式*/
+.profilephoto{
+  position: relative;
+  top:10rpx;
+  left: 10rpx;
+  border: black 1rpx solid;
+  border-radius: 5rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+/* 昵称样式*/
+.name{
+  display: flex;
+  position: relative;
+  top: -85rpx;
+  left: 120rpx;
+}
+.contextContainer{
+  width: 570rpx;
+  position: relative;
+  left: 120rpx;
+  top: -50rpx;
+  box-sizing: border-box;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+ .context{
+  font-size: 32rpx;
+}
+.inputContainer{
+  background: #fff;
+  height: 80rpx;
+  justify-content: center;
+}
+.input{
+  padding-left: 5rpx;
+  left:20rpx ;
+  width: 87%;
+  height: 45rpx;
+  background: #f5f5f5;
+  position: relative;
+  top:20rpx;
+
+}
+.placeholder{
+  font-size: 28rpx;
+  height: 34;
+  line-height: 34;
+}
+.iconfont.icon-fabiaoxinshi{
+  height: auto;
+  color:#d4237a ;
+  position: relative;
+  top:-20rpx;
+  left: 92%;
+}
+

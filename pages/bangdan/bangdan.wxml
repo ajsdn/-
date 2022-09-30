@@ -1,0 +1,20 @@
+<!--pages/bangdan/bangdan.wxml-->
+<view class="recommendContainer">
+  <view class="header">
+    <text class="iconfont icon-search searchicon" bindtap="toSearch"></text>
+    <contact-button class="fankui"></contact-button>
+    <text class="title1">排行榜</text>
+  </view>
+</view>
+<view class="zanweikaifang">
+<text class="weikaifang">暂未开放</text>
+</view>
+<!--轮播图区域-->
+<!-- <view class="bannerBibContainer">
+  <swiper class="banners" indicator-dots="true" indicator-active-color="#d43c33" indicator-color="ivory">
+  <swiper-item wx:for="{{bannerList}}" wx:key="bannerId">
+      <image src="{{item.ID}}" ></image>
+  </swiper-item>
+  </swiper>
+</view> -->
+

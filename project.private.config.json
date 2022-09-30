@@ -1,0 +1,78 @@
+{
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "pages/discover/discover",
+                    "pathName": "pages/discover/discover",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/detail/detail",
+                    "pathName": "pages/detail/detail",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/index/index",
+                    "pathName": "pages/index/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/luyin/luyin",
+                    "pathName": "pages/luyin/luyin",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/personal/personal",
+                    "pathName": "pages/personal/personal",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/discover/discover",
+                    "pathName": "pages/search/search",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/search/search",
+                    "pathName": "pages/search/search",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/bangdan/bangdan",
+                    "pathName": "pages/bangdan/bangdan",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/wodezuopin/wodezuopin",
+                    "pathName": "pages/wodezuopin/wodezuopin",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/wodezuopin/wodezuopin",
+                    "pathName": "pages/wodezuopin/wodezuopin",
+                    "query": "",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}

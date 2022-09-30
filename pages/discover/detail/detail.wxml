@@ -1,0 +1,65 @@
+<!--pages/detail/detail.wxml-->
+<view class="songDetailContainer">
+<image class="profilephoto" src="{{detail.userInfoprofilephoto}}" bindtap="zanweikaifang" ></image>
+<text class="name">{{detail.nickName}}</text>
+<view class="zongcontainer">
+<view class="titleContainer">
+<text class="title">{{detail.title}}</text>
+</view>
+<text class="content">{{detail.content}}</text>
+</view>
+<!--歌曲进度条区域-->
+<view class="progressContainer">
+<view class="progressControl">
+<text>{{detail.currentTime}}</text>
+<!--总进度条-->
+<view class="barControl" >
+<!--实时进度条-->
+  <view class="audio-Current-Bar" style="width: {{detail.currentWidth + 'rpx'}};">
+    <!--实时进度条头-->
+    <view class="audio-tou"></view>
+  </view>
+</view>
+<text >{{detail.duration}}</text>
+</view>
+</view>
+<!--底部控制播放区域-->
+<view class="musicControl">
+  <text class="iconfont {{bofangisPlay?'icon-bofang':'icon-bofang1'}}" bindtap="kaishibofang"></text>
+</view>
+<!--右侧点赞评论转发区域-->
+<view class= "cover-container">
+<view class="nav-section">
+ 
+   
+      <view class="zhuanfaContainer"  hover-class="common-hover"  hover-stay-time="50" >
+      <view>
+        <text class="iconfont icon-forward1" bindtap="zhuanfa"  data-id="{{item._id}}" ></text>
+        <text class="zhuanfanum" >{{detail.zhuanfanum}}</text>
+      </view>
+      </view>
+</view>
+</view>
+</view>
+<view class="pinglunContainer">
+  <text class="pinglunnum">共{{detail.pinglun.length}}条评论</text>
+</view>
+<!--评论区域-->
+<scroll-view class="pinglunScorll" 
+scroll-y 
+ bindrefresherrefresh="handleRefresher" refresher-enabled refresher-threshold="1" refresher-triggered="{{isTriggered}}">
+<view wx:for="{{detail.pinglun}}" wx:key="id"class="Container">
+<view class="bigcontainer">
+<image class="profilephoto" src="{{item.profilephoto}}"></image>
+<text class="name">{{item.name}}</text>
+<view class="contextContainer">
+<text class="context">{{item.content}}</text>
+</view>
+</view>
+</view>
+</scroll-view>
+<!--评论区域-->
+<view class="inputContainer">
+<textarea placeholder="留下你的精彩评论吧" placeholder-class="placeholder" class="input" bindinput="getContent" confirm-type="send" value="{{inputcontent}}" maxlength="136"></textarea>
+<image class="iconfont icon-fabiaoxinshi" bindtap="fabiao"></image>
+</view>
